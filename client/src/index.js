@@ -5,6 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const url = 'ws://localhost:3000/cable'
+
+window.ActionCable = new WebSocket(url);
+
 root.render(
   <React.StrictMode>
     <App />
